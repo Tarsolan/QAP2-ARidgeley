@@ -1,0 +1,10 @@
+version: '3'
+services:
+  myapp-main:
+    image: qap2_aridgeley:latest
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:mysql://keyin-db-1.cjuqnyg23emc.us-east-1.rds.amazonaws.com:3306/qap2
+      - spring.datasource.username=admin
+      - spring.datasource.password=123Password
